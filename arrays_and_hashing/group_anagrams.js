@@ -14,7 +14,7 @@ strs[i] consists of lowercase English letters.
 // https://leetcode.com/problems/group-anagrams/
 
 // sorting + hash
-// time complexity O(nlogn)
+// time complexity O(n*mlogm)
 // space complexity O(n)
 var groupAnagrams = function (strs) {
   if (strs.length <= 1) return [strs];
@@ -31,6 +31,8 @@ var groupAnagrams = function (strs) {
 };
 
 // primes hashing
+// time complexity O(n*m)
+// space complexity O(n)
 var groupAnagrams = function (strs) {
   // use 26 primes to represent each lowercase letter
   const primes = [
