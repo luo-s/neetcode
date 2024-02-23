@@ -19,6 +19,8 @@ numbers is sorted in non-decreasing order.
 The tests are generated such that there is exactly one solution.
 */
 
+// https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/description/
+
 var twoSum = function (numbers, target) {
   let left = 0,
     right = numbers.length - 1;
